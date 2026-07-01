@@ -1,0 +1,384 @@
+# Instincts generated from https://github.com/lllyyysss77/VvvebJs
+# Generated: 2026-07-01T22:17:54.499Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: VvvebJs-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/VvvebJs
+---
+
+# VvvebJs Commit Length
+
+## Action
+
+Keep commit messages concise (~26 characters)
+
+## Evidence
+
+- Average commit message length: 26 chars
+- Based on 10 commits
+
+---
+id: VvvebJs-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/VvvebJs
+---
+
+# VvvebJs Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: VvvebJs-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/VvvebJs
+---
+
+# VvvebJs Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: VvvebJs-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/VvvebJs
+---
+
+# VvvebJs Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: VvvebJs-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/VvvebJs
+---
+
+# VvvebJs Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: VvvebJs-workflow-fix-bug-in-component-or-widget
+trigger: "when doing fix bug in component or widget"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/VvvebJs
+---
+
+# VvvebJs Workflow Fix Bug In Component Or Widget
+
+## Action
+
+Follow the fix-bug-in-component-or-widget workflow:
+1. Identify the bug in a builder component or widget.
+2. Modify the relevant file in libs/builder/components-*.js.
+3. Commit with a message referencing the fix.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: libs/builder/components-elements.js, libs/builder/components-widgets.js
+
+---
+id: VvvebJs-workflow-update-ui-layout-or-panels
+trigger: "when doing update ui layout or panels"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/VvvebJs
+---
+
+# VvvebJs Workflow Update Ui Layout Or Panels
+
+## Action
+
+Follow the update-ui-layout-or-panels workflow:
+1. Edit relevant CSS and SCSS files to reflect UI changes.
+2. Commit changes with a message describing the UI update.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: css/editor.css, scss/_builder.scss, scss/editor.scss
+
+---
+id: vvvebjs-instinct-file-naming
+trigger: "When creating or renaming a file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct File Naming
+
+## Action
+
+Use camelCase for file names
+
+## Evidence
+
+- Pattern in file naming conventions
+
+---
+id: vvvebjs-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: vvvebjs-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: vvvebjs-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: vvvebjs-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: vvvebjs-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: vvvebjs-instinct-testing-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Testing Location
+
+## Action
+
+Place tests in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: vvvebjs-instinct-testing-pattern
+trigger: "When writing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Testing Pattern
+
+## Action
+
+Follow the single-package structure and keep tests modular, matching the hybrid module organization
+
+## Evidence
+
+- Pattern in architecture.moduleOrganization
+- Pattern in architecture.folderStructure
+
+---
+id: vvvebjs-instinct-commit-format-short
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Commit Format Short
+
+## Action
+
+Use a short, freeform message (often a phrase or sentence fragment, no prefix)
+
+## Evidence
+
+- Seen in commits: 'Html partials', 'Embed video mute fix'
+
+---
+id: vvvebjs-instinct-commit-reference-fix
+trigger: "When fixing a bug"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Commit Reference Fix
+
+## Action
+
+Reference the fix in the commit message (e.g., mention the bug or feature fixed)
+
+## Evidence
+
+- Seen in commit: 'Embed video mute fix'
+
+---
+id: vvvebjs-instinct-fix-bug-in-component-or-widget
+trigger: "When someone needs to fix a bug in a builder component or widget (e.g., video mute issue)"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Fix Bug In Component Or Widget
+
+## Action
+
+Modify the relevant file in libs/builder/components-*.js and commit with a message referencing the fix
+
+## Evidence
+
+- Workflow 'fix-bug-in-component-or-widget'
+- Files: libs/builder/components-elements.js, libs/builder/components-widgets.js
+
+---
+id: vvvebjs-instinct-update-ui-layout-or-panels
+trigger: "When someone wants to change the layout or move UI panels (e.g., moving tabs to sidebar)"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: lllyyysss77/VvvebJs
+---
+
+# Vvvebjs Instinct Update Ui Layout Or Panels
+
+## Action
+
+Edit relevant CSS and SCSS files to reflect UI changes and commit with a message describing the update
+
+## Evidence
+
+- Workflow 'update-ui-layout-or-panels'
+- Files: css/editor.css, scss/_builder.scss, scss/editor.scss
+
